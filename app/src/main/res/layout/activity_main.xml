@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/rollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roll no.:" />
+
+    <EditText
+        android:id="@+id/editRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/ageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age:" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/loadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Load" />
+ <GridLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:columnCount="2"
+     android:rowCount="2"
+     android:layout_gravity="center">
+
+     <Button
+         android:id="@+id/addBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Add" />
+
+     <Button
+         android:id="@+id/findBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Find" />
+
+     <Button
+         android:id="@+id/deleteBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Delete" />
+
+     <Button
+         android:id="@+id/updateBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Update" />
+
+
+ </GridLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/resultView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
